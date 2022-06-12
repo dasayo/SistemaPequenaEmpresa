@@ -1,0 +1,115 @@
+Index: src/main/java/database/ConexionDb.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/database/ConexionDb.java b/src/main/java/database/ConnectionDb.java
+rename from src/main/java/database/ConexionDb.java
+rename to src/main/java/database/ConnectionDb.java
+--- a/src/main/java/database/ConexionDb.java	(revision d62367939e12bde6d149e19757fb81fc5131e435)
++++ b/src/main/java/database/ConnectionDb.java	(date 1655077278950)
+@@ -3,7 +3,7 @@
+ import java.sql.Connection;
+ import java.sql.DriverManager;
+ 
+-public class ConexionDb {
++public class ConnectionDb {
+    public Connection conectar(){
+        String host="database-1.cwvm1nkqoc9g.us-east-1.rds.amazonaws.com";
+        String user="program";
+@@ -21,9 +21,9 @@
+             conec = DriverManager.getConnection("jdbc:postgresql://"+host+":5432/"+db,user,pass);
+             boolean valido = conec.isValid(50000);
+            System.out.println(valido?"test ok":"test fail");
+-       }catch (java.sql.SQLException sql){
+-           System.out.println(sql);
++       }catch (java.sql.SQLException e){
++           System.out.println(e);
+        }
+        return conec;
+    }
+-   }
++   }z
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"2a755ffa-3ff1-4b59-a260-a4e30e074aa2\" name=\"Changes\" comment=\"0.0.2&#10;&#10;montado el crud de insert para productos y usuarios.\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Main.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/database/CrudInsert.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/database/CrudInsert.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2AJXOUHfQ9yXQd0eBPhK9qlDXAB\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Downloaded.Files.Path.Enabled\": \"false\",\n    \"Repository.Attach.Annotations\": \"false\",\n    \"Repository.Attach.JavaDocs\": \"false\",\n    \"Repository.Attach.Sources\": \"false\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"project.structure.last.edited\": \"Libraries\",\n    \"project.structure.proportion\": \"0.15\",\n    \"project.structure.side.proportion\": \"0.2\",\n    \"settings.editor.selected.configurable\": \"configurable.group.language\"\n  }\n}]]></component>\n  <component name=\"RunManager\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\n      <module name=\"SistemaPequenaEmpresa\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"2a755ffa-3ff1-4b59-a260-a4e30e074aa2\" name=\"Changes\" comment=\"\" />\n      <created>1654728630173</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1654728630173</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"0.0.1\">\n      <created>1654741321596</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1654741321596</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"0.01\">\n      <created>1654748562425</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1654748562425</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"0.02\">\n      <created>1654749458401</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1654749458401</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"0.0.2&#10;&#10;montado el crud de insert para productos y usuarios.\">\n      <created>1654757438395</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1654757438395</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"5\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"origin/alejo\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"0.1\" />\n    <MESSAGE value=\"0.0.1\" />\n    <MESSAGE value=\"0.01\" />\n    <MESSAGE value=\"0.02\" />\n    <MESSAGE value=\"0.0.2&#10;&#10;montado el crud de insert para productos y usuarios.\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"0.0.2&#10;&#10;montado el crud de insert para productos y usuarios.\" />\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d62367939e12bde6d149e19757fb81fc5131e435)
++++ b/.idea/workspace.xml	(date 1655077523214)
+@@ -4,10 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="2a755ffa-3ff1-4b59-a260-a4e30e074aa2" name="Changes" comment="0.0.2&#10;&#10;montado el crud de insert para productos y usuarios.">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/database/CrudInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/CrudInsert.java" afterDir="false" />
++    <list default="true" id="2a755ffa-3ff1-4b59-a260-a4e30e074aa2" name="Changes" comment="0.0.3&#10;&#10;montado el crud de insert para productos y usuarios.&#10;&#10;Una sola conexion para todo.">
++      <change beforePath="$PROJECT_DIR$/src/main/java/database/ConexionDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/ConnectionDb.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -38,20 +36,20 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Downloaded.Files.Path.Enabled": "false",
+-    "Repository.Attach.Annotations": "false",
+-    "Repository.Attach.JavaDocs": "false",
+-    "Repository.Attach.Sources": "false",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "project.structure.last.edited": "Libraries",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2",
+-    "settings.editor.selected.configurable": "configurable.group.language"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
++    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
++    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
++    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager">
+     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="Main" />
+@@ -103,7 +101,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1654757438395</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="0.0.3&#10;&#10;montado el crud de insert para productos y usuarios.&#10;&#10;Una sola conexion para todo.">
++      <created>1655077226191</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1655077226191</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -135,7 +140,8 @@
+     <MESSAGE value="0.01" />
+     <MESSAGE value="0.02" />
+     <MESSAGE value="0.0.2&#10;&#10;montado el crud de insert para productos y usuarios." />
+-    <option name="LAST_COMMIT_MESSAGE" value="0.0.2&#10;&#10;montado el crud de insert para productos y usuarios." />
++    <MESSAGE value="0.0.3&#10;&#10;montado el crud de insert para productos y usuarios.&#10;&#10;Una sola conexion para todo." />
++    <option name="LAST_COMMIT_MESSAGE" value="0.0.3&#10;&#10;montado el crud de insert para productos y usuarios.&#10;&#10;Una sola conexion para todo." />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />
