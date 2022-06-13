@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a755ffa-3ff1-4b59-a260-a4e30e074aa2" name="Changes" comment="0.0.3&#10;&#10;montado el crud de insert para productos y usuarios.&#10;&#10;Una sola conexion para todo.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="2a755ffa-3ff1-4b59-a260-a4e30e074aa2" name="Changes" comment="0.0.4&#10;&#10;Montado de crudSelectProducts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/ConexionDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/ConnectionDb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/CrudSelecteProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/CrudSelecteProductos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655077226191</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="0.0.4&#10;&#10;montado el crud de insert para productos y usuarios.&#10;&#10;Una sola conexion para todo.">
+      <created>1655078299785</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655078299785</updated>
+    </task>
+    <task id="LOCAL-00007" summary="0.0.4&#10;&#10;Montado de crudSelectProducts">
+      <created>1655078367549</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655078367549</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,7 +140,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/yeferson" />
+                        <option value="origin/alejo" />
                       </list>
                     </value>
                   </entry>
@@ -144,7 +159,20 @@
     <MESSAGE value="0.02" />
     <MESSAGE value="0.0.2&#10;&#10;montado el crud de insert para productos y usuarios." />
     <MESSAGE value="0.0.3&#10;&#10;montado el crud de insert para productos y usuarios.&#10;&#10;Una sola conexion para todo." />
-    <option name="LAST_COMMIT_MESSAGE" value="0.0.3&#10;&#10;montado el crud de insert para productos y usuarios.&#10;&#10;Una sola conexion para todo." />
+    <MESSAGE value="0.0.4&#10;&#10;montado el crud de insert para productos y usuarios.&#10;&#10;Una sola conexion para todo." />
+    <MESSAGE value="0.0.4&#10;&#10;Montado de crudSelectProducts" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.0.4&#10;&#10;Montado de crudSelectProducts" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
